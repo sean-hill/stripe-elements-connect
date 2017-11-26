@@ -73,8 +73,6 @@ export class LinkCardPage {
       this.showPaymentError(result.error.message)
     } else {
       try {
-        console.log('TOKEN:', result.token)
-        // await this.paymentMethod.add(result.token.id)
         loader.dismiss()
 
         this.close({

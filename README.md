@@ -1,26 +1,16 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Stripex
 
-## How to use this template
+This repository provides a few components that will help you integrate Stripe
+Elements and Stripe Connect (Express) into your Ionic application.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+It only includes the client side code needed to retrieve a `token` from Stripe
+using Stripe Elements, and the code that opens up Stripe Connect (Express) via
+an the `inAppBrowser` cordova plugin. The backend API's needed to persist this
+information is not provided in this repository.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Key Resources
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+The `link-card` component provides the hacks I found to get Stripe Elements
+integrated into an Ionic application. The `connect-payout` provider shows how to
+open Stripe Connect (Express) using the `inAppBrowser` plugin, and how to check
+when the Express flow is completed.
