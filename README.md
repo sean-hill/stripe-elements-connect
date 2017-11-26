@@ -5,7 +5,7 @@ Elements and Stripe Connect (Express) into your Ionic application.
 
 It only includes the client side code needed to retrieve a `token` from Stripe
 using Stripe Elements, and the code that opens up Stripe Connect (Express) via
-an the `inAppBrowser` cordova plugin. The backend API's needed to persist this
+the `inAppBrowser` cordova plugin. The backend API's needed to persist this
 information is not provided in this repository.
 
 ## Key Resources
