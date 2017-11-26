@@ -1,0 +1,18 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button (click)="close()" clear icon-only>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Link Card</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="primary-content">
+  <div class="card-form" padding>
+    <div id="card-element" class="card-input"></div>
+    <ion-input #focushelper class="focushelper" type="tel"></ion-input>
+    <button (click)="add()" [disabled]="!cardValid" ion-button color="dark" round block>Link</button>
+  </div>
+</ion-content>
