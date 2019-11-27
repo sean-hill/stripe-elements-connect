@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core'
 import { InAppBrowser } from '@ionic-native/in-app-browser'
 
-declare var mixpanel
-
 @Injectable()
 export class ConnectPayoutProvider {
   constructor(public browser: InAppBrowser) {}
