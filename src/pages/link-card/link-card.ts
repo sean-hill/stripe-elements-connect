@@ -42,10 +42,9 @@ export class LinkCardPage {
         base: {
           fontSize: '16px',
           lineHeight: '20px',
-          fontFamily: '"Montserrat", -apple-system, "Helvetica Neue", "Roboto"',
           letterSpacing: '1px',
           '::placeholder': {
-            color: 'rgba(255, 255, 0.5)'
+            color: 'gray'
           }
         },
         invalid: {
